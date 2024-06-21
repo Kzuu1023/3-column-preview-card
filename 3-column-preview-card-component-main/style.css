@@ -1,0 +1,126 @@
+body {
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2em;
+    margin: 20px 0 20px 0px;
+}
+
+.car-description {
+    font-family: "Lexend Deca", sans-serif;
+    width: 211px;
+}
+
+.button {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border: 2px solid white;
+    width: 146px;
+    height: 46px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-block: 130px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.Sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.SUVs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.Sedans,
+.SUVs,
+.Luxury {
+    width: 307px;
+    height: 500px;
+    color: hsla(0, 0%, 100%, 0.75);
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.Sedans {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.Luxury {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cars-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 140px;
+}
+
+@media only screen and (max-width: 500px) {
+    .cars-container {
+        margin-block: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Sedans,
+    .SUVs,
+    .Luxury {
+        height: 390px;
+    }
+
+    .button {
+        margin-block: 20px;
+    }
+
+    .Sedans {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .Luxury {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .car-description {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .Sedans .button {
+        color: hsl(31, 77%, 52%);
+        background-color: white;
+    }
+
+    .SUVs .button {
+        color: hsl(184, 100%, 22%);
+        background-color: white;
+    }
+
+    .Luxury .button {
+        color: hsl(179, 100%, 13%);
+        background-color: white;
+    }
+}
